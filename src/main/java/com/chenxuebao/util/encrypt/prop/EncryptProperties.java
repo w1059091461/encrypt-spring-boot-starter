@@ -1,15 +1,12 @@
-package org.javaboy.encrypt.starter.prop;
+package com.chenxuebao.util.encrypt.prop;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+
 /**
- * @author 江南一点雨
- * @微信公众号 江南一点雨
- * @网站 http://www.itboyhub.com
- * @国际站 http://www.javaboy.org
- * @微信 a_java_boy
- * @GitHub https://github.com/lenve
- * @Gitee https://gitee.com/lenve
+ * @Description:
+ * @Author:陈学宝
+ * @Date: 2022/6/12 18:14
  */
 @ConfigurationProperties(prefix = "spring.encrypt")
 public class EncryptProperties {

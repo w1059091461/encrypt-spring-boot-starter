@@ -1,10 +1,10 @@
-package org.javaboy.encrypt.starter.resp;
+package com.chenxuebao.util.encrypt.resp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.javaboy.encrypt.starter.anno.Encrypt;
-import org.javaboy.encrypt.starter.model.RespBean;
-import org.javaboy.encrypt.starter.prop.EncryptProperties;
-import org.javaboy.encrypt.starter.utils.AESUtils;
+import com.chenxuebao.util.encrypt.anno.Encrypt;
+import com.chenxuebao.util.encrypt.model.RespBean;
+import com.chenxuebao.util.encrypt.prop.EncryptProperties;
+import com.chenxuebao.util.encrypt.utils.AESUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.MethodParameter;
@@ -15,14 +15,11 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
+
 /**
- * @author 江南一点雨
- * @微信公众号 江南一点雨
- * @网站 http://www.itboyhub.com
- * @国际站 http://www.javaboy.org
- * @微信 a_java_boy
- * @GitHub https://github.com/lenve
- * @Gitee https://gitee.com/lenve
+ * @Description:
+ * @Author:陈学宝
+ * @Date: 2022/6/12 18:14
  */
 @EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice

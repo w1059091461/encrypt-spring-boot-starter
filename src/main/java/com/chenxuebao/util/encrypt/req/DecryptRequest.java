@@ -1,8 +1,8 @@
-package org.javaboy.encrypt.starter.req;
+package com.chenxuebao.util.encrypt.req;
 
-import org.javaboy.encrypt.starter.anno.Decrypt;
-import org.javaboy.encrypt.starter.prop.EncryptProperties;
-import org.javaboy.encrypt.starter.utils.AESUtils;
+import com.chenxuebao.util.encrypt.anno.Decrypt;
+import com.chenxuebao.util.encrypt.prop.EncryptProperties;
+import com.chenxuebao.util.encrypt.utils.AESUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.MethodParameter;
@@ -17,14 +17,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 
+
 /**
- * @author 江南一点雨
- * @微信公众号 江南一点雨
- * @网站 http://www.itboyhub.com
- * @国际站 http://www.javaboy.org
- * @微信 a_java_boy
- * @GitHub https://github.com/lenve
- * @Gitee https://gitee.com/lenve
+ * @Description:
+ * @Author:陈学宝
+ * @Date: 2022/6/12 18:14
  */
 @EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice
