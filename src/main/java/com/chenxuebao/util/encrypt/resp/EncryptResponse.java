@@ -1,7 +1,7 @@
 package com.chenxuebao.util.encrypt.resp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.chenxuebao.util.encrypt.anno.Encrypt;
+import com.chenxuebao.api.annotation.Encrypt;
 import com.chenxuebao.util.encrypt.model.RespBean;
 import com.chenxuebao.util.encrypt.prop.EncryptProperties;
 import com.chenxuebao.util.encrypt.utils.AESUtils;

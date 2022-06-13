@@ -1,6 +1,6 @@
 package com.chenxuebao.util.encrypt.req;
 
-import com.chenxuebao.util.encrypt.anno.Decrypt;
+import com.chenxuebao.api.annotation.Decrypt;
 import com.chenxuebao.util.encrypt.prop.EncryptProperties;
 import com.chenxuebao.util.encrypt.utils.AESUtils;
 import org.springframework.beans.factory.annotation.Autowired;

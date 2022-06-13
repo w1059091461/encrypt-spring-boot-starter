@@ -1,4 +1,4 @@
-package com.chenxuebao.spring.handler;
+package com.chenxuebao.api.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

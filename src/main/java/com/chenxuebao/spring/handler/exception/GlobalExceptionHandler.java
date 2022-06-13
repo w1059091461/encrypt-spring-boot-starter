@@ -1,4 +1,4 @@
-package com.chenxuebao.spring.handler;
+package com.chenxuebao.spring.handler.exception;
 
 import com.chenxuebao.api.exception.FebsResponse;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.chenxuebao.util.encrypt.anno;
+package com.chenxuebao.api.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,6 +11,6 @@ import java.lang.annotation.Target;
  * @Date: 2022/6/12 18:14
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
-public @interface Encrypt {
+@Target({ElementType.METHOD,ElementType.PARAMETER})
+public @interface Decrypt {
 }
