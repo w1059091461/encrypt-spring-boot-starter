@@ -4,12 +4,12 @@ services:
     image: mysql:5.7
     container_name: mysql #应用名称
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    restart: always
-    environment:
+    restart: always #容器的重启策略
+    environment: #启动容器时的环境变量
       MYSQL_ROOT_PASSWORD: 123456 #设置root帐号密码
     ports:
       - 3306:3306
-    volumes:
+    volumes: #配置容器的数据卷
       - /mydata/mysql/data/db:/var/lib/mysql #数据文件挂载
       - /mydata/mysql/data/conf:/etc/mysql/conf.d #配置文件挂载
       - /mydata/mysql/data/conf/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf #配置文件挂载
