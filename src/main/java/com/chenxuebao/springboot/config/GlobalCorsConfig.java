@@ -1,4 +1,4 @@
-package com.chenxuebao.spring.util;
+package com.chenxuebao.springboot.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

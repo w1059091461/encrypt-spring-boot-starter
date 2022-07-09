@@ -35,6 +35,18 @@ docker-compose up -d
  ```
  该命令要在docker-compose.yml当前目录执行
  ```
+#### docker-compose启动:
+docker- compose - f docker-compose-test.yml up - d
+ ```
+该命令要在docker-compose-test.yml当前目录执行
+现象：如果一个文件夹中有多个.yml文件，那么每次运行其中一个yml就会出现警告有相同项
+目的其他孤立容器，这是因为Docker机制把文件夹名称作为默认项目名称，一个项目名称被多
+个yml文件使用就会发生这个警告：
+WARNING: Found orphan containers (ngrok, nps) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+frps is up-to-date
+解决方法1：-p自定义project项目名称：
+docker- compose - p test - f docker-compose-test.yml up - d
+ ```
 #### 列出所有镜像:
 docker image ls
  ```
@@ -115,3 +127,5 @@ docker volume ls
 docker volume inspect
 #### 批量停止:
 docker-compose down
+#### 查看日志:
+docker logs 60f486ec7c33
